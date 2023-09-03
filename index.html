@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Max-Q und Luftwiderstand Berechner</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <h1>Max-Q und Luftwiderstand Berechner</h1>
+    <div class="calculator">
+        <label for="maxspeed">Maximale Geschwindigkeit (km/h):</label>
+        <input type="text" id="maxspeed" placeholder="Max. Geschwindigkeit" />
+        <br>
+        <label for="oberflaeche">Maximale Oberfläche (cm²):</label>
+        <input type="text" id="oberflaeche" placeholder="Max. Oberfläche" />
+        <br>
+        <button onclick="berechne()">Berechnen</button>
+    </div>
+    <div class="result">
+        <p>Luftdruck: <span id="luftdruck">-</span> hPa</p>
+        <p>Luftwiderstand: <span id="luftwiderstand">-</span> hPa</p>
+        <p>Benötigte Zeit bis Max-Q: <span id="zeit">-</span> Sekunden</p>
+    </div>
+    
+    <!-- Hier füge das Canvas-Element für das Diagramm hinzu -->
+    <canvas id="chart" width="400" height="200"></canvas>
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

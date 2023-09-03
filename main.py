@@ -30,3 +30,4 @@ beschleunigung = 122  # m/s²
 
 ergebnis = berechne_zeit(anfangsgeschwindigkeit, endgeschwindigkeit, beschleunigung)
 print("The required time to maxQ is :", ergebnis, "seconds")
+
